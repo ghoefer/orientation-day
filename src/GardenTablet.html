@@ -1,0 +1,190 @@
+
+<!--
+//  quick_start_template.html
+//
+//  Created by Faye Li on 3 Feb 2017
+//  Copyright 2017 High Fidelity, Inc.
+//
+//  Distributed under the Apache License, Version 2.0.
+//  See the accompanying file LICENSE or http://www.apache.org/licenses/LICENSE-2.0.html
+-->
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Build Garden from Tablet</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <style>
+
+            h4{
+              font-size: 40px;
+              font-family: 'open sans';
+              font-weight: lighter;
+            }
+
+            h5 {
+              font-size: 50px;
+            }
+
+            h6{
+              font-size: 20px;
+              font-family: 'open sans';
+              font-weight: lighter;
+              padding-bottom: 30px;
+            }
+
+            body {
+                margin: 0;
+                width: 100%;
+                font-family: 'Arimo';
+                color: white;
+                background: linear-gradient(#2b2b2b, #0f212e);
+                padding-bottom: 500px;
+            }
+
+            .top-bar {
+                height: 90px;
+                background: linear-gradient(#2b2b2b, #1e1e1e);
+                font-weight: bold;
+                padding-left: 30px;
+                padding-right: 30px;
+                display: flex;
+                align-items: center;
+                position: fixed;
+                width: 480px;
+                top: 0;
+                z-index: 1;
+            }
+
+            .content {
+                margin-top: 90px;
+                padding: 30px;
+                position: center;
+            }
+
+            button {
+                font-family: 'Arimo';
+                font-weight: bold;
+                font-size: 13px;
+                text-transform: uppercase;
+                vertical-align: top;
+                min-width: 120px;
+                padding: 20px 20px;
+                margin-right: 6px;
+                border-radius: 5px;
+                border: none;
+                color: #fff;
+                background-color: #000;
+                background: linear-gradient(#343434 20%, #000 100%);
+                cursor: pointer;
+                float: left;
+                text-align: center;
+                position: relative;
+            }
+
+            button.tree {
+                color: #121212;
+                background-color: #94132e;
+                background: linear-gradient(#d42043 20%, #94132e 100%);
+                border: none;
+                border: 0;
+            }
+            button.flower {
+                color: #121212;
+                background-color: #1080b8;
+                background: linear-gradient(#00b4ef 20%, #1080b8 100%);
+
+            }
+            button.rock {
+                color: #121212;
+                background-color: #afafaf;
+                background: linear-gradient(#fff 20%, #afafaf 100%);
+
+            }
+            button.bird {
+                color: #121212;
+                background-color: #B4EF00;
+                background: linear-gradient(#a5db02 20%, #B4EF00 100%);
+
+            }
+
+            button:enabled:hover {
+                background: linear-gradient(#000, #000);
+                border: none;
+            }
+            button.tree:enabled:hover {
+                background: linear-gradient(#d42043, #d42043);
+                border: none;
+            }
+            button.flower:enabled:hover {
+                background: linear-gradient(#00b4ef, #00b4ef);
+                border: none;
+            }
+            button.rock:enabled:hover {
+                background: linear-gradient(#fff, #fff);
+                border: none;
+            }
+            button.bird:enabled:hover {
+                background: linear-gradient(#c1e74c, #c1e74c);
+                border: none;
+            }
+
+            button: active {
+                background: linear-gradient(#343434, #343434);
+            }
+            button.tree:active {
+                background: linear-gradient(#343434, #343434);
+            }
+            button.flower:active {
+                background: linear-gradient(#94132e, #94132e);
+            }
+            button.rock:active {
+                background: linear-gradient(#1080b8, #1080b8);
+            }
+            button.bird:active {
+                background: linear-gradient(#afafaf, #afafaf);
+            }
+
+            button :disabled {
+                color: #252525;
+                background: linear-gradient(#575757 20%, #252525 100%);
+            }
+
+            button [pressed=pressed] {
+                color: #00b4ef;
+            }
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="top-bar">
+            <h4>Create Garden</h4>
+        </div>
+        <div class="content">
+            <h5>Welcome</h5>
+            <h6>Please select the item you would like to add to your garden:</h6>
+
+            <button type="button" class="tree" value="Tree" alt="Tree"><img src="http://icons.iconarchive.com/icons/iconsmind/outline/512/Tree-22-icon.png" style='float left'; width='100px'; height='100px'<br><br>Tree</button>
+            <button type="button" class="flower" value="Flower" alt="Flower"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/639589-200.png" style='float left;' width='100px'; height='100px'<br><br>Flower</button>
+            <button type="button" class="rock" value="rock" alt="Rock"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/117090-200.png" style='float left;'width='100px'; height='100px' <br><br>Rock</button>
+            <button type="button" class="bird" value="bird" alt="bird"><img src="https://png.icons8.com/windows/1600/bird.png" style='float left;'width='100px'; height='100px' <br><br>Bird</button>
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>
+            function main() {
+                console.log("ready");
+            }
+
+            $(document).ready(main);
+        </script>
+
+
+    </body>
+</html>
